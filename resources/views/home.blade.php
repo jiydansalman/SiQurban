@@ -1,5 +1,5 @@
-    <!DOCTYPE html>
-    <html lang="id" class="scroll-smooth">
+<!DOCTYPE html>
+    <html id="home" lang="id" class="scroll-smooth">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +22,9 @@
         <!-- Navigation Bar -->
         <nav class="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md text-white py-4 px-8 flex justify-center space-x-6 z-50">
             <a href="#" style="font-family: 'Actor', sans-serif;" class="relative inline-block after:block after:h-[2px] after:w-full after:bg-black after:scale-x-0 hover:after:scale-x-100 transition-all">Home</a>
-            <a href="#siqurban" style="font-family: 'Actor', sans-serif;" class="hover:underline">SiQurban</a>
-            <a href="#packages" style="font-family: 'Actor', sans-serif;" class="hover:underline">Packages</a>
-            <a href="/signup" style="font-family: 'Afacad', sans-serif;" class="font-bold hover:underline">Sign Up</a>
+            <a href="/packages" style="font-family: 'Actor', sans-serif;" class="hover:underline">Packages</a>
+            <a href="/tabunganku" style="font-family: 'Actor', sans-serif;" class="hover:underline">Tabunganku</a>
+            <a href="/profile/edit" style="font-family: 'Afacad', sans-serif;" class="font-bold hover:underline">Profile</a>
         </nav>
         
         <!-- Hero Section -->
