@@ -32,6 +32,7 @@ class AuthController extends Controller
             'username'=>$request->username,
             'email'=>$request->email,
             'password'=>Hash::make($request->password),
+            'role_id' => 1,
         ]);
 
         //direct ke login dengan pesan gacorrr

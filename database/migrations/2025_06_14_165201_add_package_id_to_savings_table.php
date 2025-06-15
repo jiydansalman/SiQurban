@@ -10,7 +10,7 @@ return new class extends Migration
     {
         Schema::table('savings', function (Blueprint $table) {
             // Rename qurban_id ke package_id
-            $table->renameColumn('qurban_id', 'package_id');
+            // $table->renameColumn('qurban_id', 'package_id');
             
             // Tambah kolom yang belum ada
             if (!Schema::hasColumn('savings', 'delivery_location')) {
