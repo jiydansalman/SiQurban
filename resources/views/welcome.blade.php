@@ -16,7 +16,7 @@
     <body style="background-color: #875937;">
         <!-- Header Section -->
         <header class="relative w-full h-screen bg-cover bg-opacity-25 bg-center" 
-            style="background-image: url('{{ asset('storage/images/ai_mati.jpg') }}');">
+            style="background-image: url('{{ asset('images/ai_mati.jpg') }}');">
             <div class="absolute inset-0" style="background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4),#875937);"></div>
         </header>
         <!-- Navigation Bar -->
@@ -29,7 +29,7 @@
         
         <!-- Hero Section -->
         <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-            <img src="{{ asset('storage/images/logo_putih.png') }}" alt="Logo Siddiq Qurban" class="absolute top-5 -mt-5 left-5 w-40">
+            <img src="{{ asset('images/logo_putih.png') }}" alt="Logo Siddiq Qurban" class="absolute top-5 -mt-5 left-5 w-40">
             
             <h1 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-8xl">Assalaamu'alaikum,</h1>
             <h2 style="font-family: 'Berkshire Swash', sans-serif;" class="text-6xl">
@@ -66,7 +66,7 @@
                 <div class="p-6 rounded-xl shadow-lg relative overflow-hidden flex flex-col justify-center items-center text-center">
                     <!-- Background Image -->
                     <div class="absolute inset-0 bg-cover bg-bottom opacity-25" 
-                     style="background-image: url('{{ asset('storage/images/Kambingmakan.jpg') }}');">
+                     style="background-image: url('{{ asset('images/Kambingmakan.jpg') }}');">
                     </div>
 
                     <!-- Overlay Transparan -->
@@ -89,7 +89,7 @@
                     <div class= "p-6 rounded-xl shadow-lg relative overflow-hidden flex flex-col items-center">
                         <!-- Background Image -->
                         <div class="absolute inset-0 bg-cover bg-bottom opacity-25" 
-                        style="background-image: url('{{ asset('storage/images/Kambingmakan.jpg') }}');">
+                        style="background-image: url('{{ asset('images/Kambingmakan.jpg') }}');">
                         </div>
 
                         <!-- Overlay Transparan -->
@@ -107,7 +107,7 @@
                     <div class= "p-6 rounded-xl shadow-lg relative overflow-hidden flex flex-col items-center">
                         <!-- Background Image -->
                         <div class="absolute inset-0 bg-cover bg-bottom opacity-25" 
-                        style="background-image: url('{{ asset('storage/images/Kambingmakan.jpg') }}');">
+                        style="background-image: url('{{ asset('images/Kambingmakan.jpg') }}');">
                         </div>
 
                         <!-- Overlay Transparan -->
@@ -123,7 +123,7 @@
 
                 <!-- Kartu 3 -->
                 <div class="bg-[#5A3E2B] justify-center item-center text-center">
-                    <img src="{{ asset('storage/images/Kambing.png') }}" class="w-[548px] h-[620px]">
+                    <img src="{{ asset('images/Kambing.png') }}" class="w-[548px] h-[620px]">
                     <p class="text-center text-lg italic mt-8">"مَنْ صَلَّى صَلَاتَنَا وَنَسَكَ نُسُكَنَا فَقَدْ أَصَابَ النُّسُكَ"</p>
                     <p class="text-center text-lg italic mt-8">Siapa yang melaksanakan shalat seperti shalat kami, berkurban seperti yang kami lakukan, berarti kurbannya adalah benar</p>
                 </div>
@@ -137,7 +137,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
                 <div class="relative p-4 border rounded-lg shadow-md h-96">
                     <div class="absolute rounded-lg inset-0 bg-cover bg-bottom" 
-                        style="background-image: url('{{ asset('storage/images/PaketAKambing.png') }}');">
+                        style="background-image: url('{{ asset('images/PaketAKambing.png') }}');">
                     </div>
                     <div class="relative text-white" style="text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black;">
                         <h3 class="font-semibold text-3xl" style="font-family: 'Afacad', sans-serif;">Paket B   <span class="text-lg text-yellow-300">Kambing</h3>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="relative p-4 border rounded-lg shadow-md h-96">
                     <div class="absolute rounded-lg inset-0 bg-cover bg-bottom" 
-                        style="background-image: url('{{ asset('storage/images/PaketC.png') }}');">
+                        style="background-image: url('{{ asset('images/PaketC.png') }}');">
                     </div>
                     <div class="relative text-white" style="text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black;">
                         <h3 class="font-semibold text-3xl" style="font-family: 'Afacad', sans-serif;">Paket C  <span class="text-lg text-yellow-300">Sapi</h3>
@@ -155,7 +155,7 @@
                 </div>
                 <div class="relative p-4 border rounded-lg shadow-md h-96">
                     <div class="absolute rounded-lg inset-0 bg-cover bg-bottom" 
-                        style="background-image: url('{{ asset('storage/images/PaketBDomba.png') }}');">
+                        style="background-image: url('{{ asset('images/PaketBDomba.png') }}');">
                     </div>
                     <div class="relative text-white" style="text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black;">
                         <h3 class="font-semibold text-3xl" style="font-family: 'Afacad', sans-serif;">Paket B  <span class="text-lg text-yellow-300">Domba</h3>
@@ -185,7 +185,7 @@
                     <p class="text-2xl font-bold text-left text-white" style="font-family: 'Poppins', sans-serif;">
                         and download it now!
                     </p>
-                    <img src="{{ asset('storage/images/mobileapp.png') }}" style="width: 528px; height: 600px;px;">
+                    <img src="{{ asset('images/mobileapp.png') }}" style="width: 528px; height: 600px;px;">
                 </div>
 
                 <!-- Bagian Kanan: Deskripsi, Ayat, dan Tombol Download -->
