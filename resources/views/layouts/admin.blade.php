@@ -13,7 +13,7 @@
 <body class="flex h-screen bg-gray-100">
     <div class="min-h-screen flex">
         <!-- Sidebar -->
-        <aside class="fixed relative w-80 text-white p-6 flex flex-col min-h-screen" style="background-image: url('/storage/images/sabanaprofile.jpeg'); background-size: cover; background-position: center;">
+        <aside class="fixed relative w-80 text-white p-6 flex flex-col min-h-screen" style="background-image: url('images/sabanaprofile.jpeg'); background-size: cover; background-position: center;">
             <!-- Logo -->
             <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
@@ -21,7 +21,7 @@
                 <div class= "text-white">    
                     <div class="flex items-center justify-center mb-6">
                         <a href="/dashboard">
-                        <img src="{{ asset('storage/images/logo_putih.png') }}" alt="SiQurban Logo" class="h-20">
+                        <img src="{{ asset('images/logo_putih.png') }}" alt="SiQurban Logo" class="h-20">
                         </a>
                     </div>
                 

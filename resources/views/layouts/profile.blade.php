@@ -9,7 +9,7 @@
 </head>
 <body class="flex h-screen bg-gray-100">
   <!-- Sidebar -->
-  <aside class="fixed relative w-80 text-white p-6 flex flex-col min-h-screen" style="background-image: url('/storage/images/sabanaprofile.jpeg'); background-size: cover; background-position: center;">
+  <aside class="fixed relative w-80 text-white p-6 flex flex-col min-h-screen" style="background-image: url('images/sabanaprofile.jpeg'); background-size: cover; background-position: center;">
     <!-- Overlay hanya di sidebar -->
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
@@ -18,7 +18,7 @@
       <div>
         <div class="flex items-center justify-center mb-6">
           <a href="/home">
-            <img src="{{ asset('storage/images/logo_putih.png') }}" alt="SiQurban Logo" class="h-20">
+            <img src="{{ asset('images/logo_putih.png') }}" alt="SiQurban Logo" class="h-20">
           </a>
         </div>
 

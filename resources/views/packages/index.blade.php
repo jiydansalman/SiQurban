@@ -18,7 +18,7 @@
     <body class="text-white" style="background-color: #875937;">
         <!-- Header Section -->
         <header class="relative w-full h-screen bg-cover bg-opacity-25 bg-center" 
-            style="background-image: url('{{ asset('storage/images/ai_mati.jpg') }}');">
+            style="background-image: url('{{ asset('images/ai_mati.jpg') }}');">
             <div class="absolute inset-0" style="background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4),#875937);"></div>
         </header>
         <!-- Navigation Bar -->
@@ -30,7 +30,7 @@
         </nav>
 
         <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-            <img src="{{ asset('storage/images/logo_putih.png') }}" alt="Logo Siddiq Qurban" class="absolute top-5 -mt-5 left-5 w-40">
+            <img src="{{ asset('images/logo_putih.png') }}" alt="Logo Siddiq Qurban" class="absolute top-5 -mt-5 left-5 w-40">
 
             <h1 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-8xl">Packages</h1>
             <h4 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-xl">Home > Packages</h4>
@@ -64,22 +64,22 @@
                 <div class="flex flex-wrap justify-center gap-5 mb-8  items-center">
                     <a href="#" data-category="semua"
                         class="kategori-hewan bg-[#F9F2EE] h-[105px] w-[349px] rounded-xl flex justify-center items-center transition-all duration-300">
-                        <img src="{{ asset('storage/images/Semua_Kategori.png') }}" class="h-24 object-contain"/>
+                        <img src="{{ asset('images/Semua_Kategori.png') }}" class="h-24 object-contain"/>
                     </a>
 
                     <a href="#" data-category="sapi"
                         class="kategori-hewan bg-[#EDD8A0] h-[105px] w-[349px] rounded-xl flex items-center justify-center transition-all duration-300">
-                        <img src="{{ asset('storage/images/Sapi_Kategori.png') }}" class="h-[105px] w-[349px] object-cover rounded-xl" />
+                        <img src="{{ asset('images/Sapi_Kategori.png') }}" class="h-[105px] w-[349px] object-cover rounded-xl" />
                     </a>
 
                     <a href="#" data-category="kambing"
                         class="kategori-hewan bg-[#E5D6C6] h-[105px] w-[349px] rounded-xl flex items-center transition-all duration-300">
-                        <img src="{{ asset('storage/images/Kambing_Kategori.png') }}" class="h-[105px] w-[349px] object-cover rounded-xl"/>
+                        <img src="{{ asset('images/Kambing_Kategori.png') }}" class="h-[105px] w-[349px] object-cover rounded-xl"/>
                     </a>
 
                     <a href="#" data-category="domba"
                         class="kategori-hewan bg-[#D6C6B5] h-[105px] w-[349px] rounded-xl flex items-center transition-all duration-300">
-                        <img src="{{ asset('storage/images/Domba_Kategori.png') }}" class="h-[105px] w-[349px] object-cover rounded-xl" />
+                        <img src="{{ asset('images/Domba_Kategori.png') }}" class="h-[105px] w-[349px] object-cover rounded-xl" />
                     </a>
                 </div>
             </div>

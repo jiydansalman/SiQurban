@@ -17,7 +17,7 @@
 
 <body class="text-black" style="background-color: #FFE7D0;">
     <header class="relative w-full h-screen bg-cover bg-opacity-25 bg-center" 
-        style="background-image: url('{{ asset('storage/images/bg-tabunganku.jpg') }}');">
+        style="background-image: url('{{ asset('images/bg-tabunganku.jpg') }}');">
         <div class="absolute inset-0" style="background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4),#FFE7D0);"></div>
         
         <!-- Navigation Bar -->
@@ -29,7 +29,7 @@
         </nav>
 
         <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-            <img src="{{ asset('storage/images/logo_putih.png') }}" alt="Logo Siddiq Qurban" class="absolute top-5 -mt-5 left-5 w-40">
+            <img src="{{ asset('images/logo_putih.png') }}" alt="Logo Siddiq Qurban" class="absolute top-5 -mt-5 left-5 w-40">
             <h1 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-8xl">Tabunganku</h1>
             <h4 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-xl">Home > Tabunganku</h4>
         </div>
