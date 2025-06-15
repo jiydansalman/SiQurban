@@ -9,7 +9,7 @@
 </head>
 <body class="flex h-screen bg-gray-100">
   <!-- Sidebar -->
-  <aside class="fixed relative w-80 text-white p-6 flex flex-col min-h-screen" style="background-image: url('images/sabanaprofile.jpeg'); background-size: cover; background-position: center;">
+  <aside class="fixed relative w-80 text-white p-6 flex flex-col min-h-screen" style="background-image: url('/images/sabanaprofile.jpeg'); background-size: cover; background-position: center;">
     <!-- Overlay hanya di sidebar -->
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
