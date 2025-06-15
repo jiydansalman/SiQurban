@@ -9,11 +9,11 @@
 </head>
 <body class="flex min-h-screen m-0">
   <!-- Bagian kiri (gambar) -->
-  <div class="flex-1 bg-cover bg-center h-screen" style="background-image: url('/storage/images/foto-sign-up.jpg');"></div>
+  <div class="flex-1 bg-cover bg-center h-screen" style="background-image: url('/images/foto-sign-up.jpg');"></div>
 
   <!-- Bagian kanan (form sign up) -->
   <div class="flex-1 bg-[#875937] flex flex-col justify-center items-center text-white p-10 h-screen gap-2">
-    <div class="w-48 h-48 mb-0 bg-contain bg-center bg-no-repeat" style="background-image: url('/storage/images/logo_putih.png');"></div>
+    <div class="w-48 h-48 mb-0 bg-contain bg-center bg-no-repeat" style="background-image: url('/images/logo_putih.png');"></div>
     <h1 class="text-3xl font-serif" style="font-family: 'Berkshire Swash'">Welcome to SiQurban</h1>
     <p class="text-lg">create an account!</p>
     

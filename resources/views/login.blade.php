@@ -10,11 +10,11 @@
 </head>
 <body class="flex min-h-screen m-0">
   <!-- Bagian kiri untuk gambar -->
-  <div class="flex-1 bg-cover bg-center h-screen" style="background-image: url('/storage/images/foto_login.jpg');"></div>
+  <div class="flex-1 bg-cover bg-center h-screen" style="background-image: url('/images/foto_login.jpg');"></div>
   
   <!-- Bagian kanan untuk form login -->
   <div class="flex-1 bg-[#875937] flex flex-col justify-center items-center text-white p-10 h-screen gap-2">
-    <img src="/storage/images/logo_putih.png" alt="Siddiq Qurban Logo" class="w-32 mb-3">
+    <img src="/images/logo_putih.png" alt="Siddiq Qurban Logo" class="w-32 mb-3">
     
     <h1 class="text-4xl font-bold " style="font-family: 'Berkshire Swash' ">Welcome Back!</h1>
     <p class="text-lg">Log in to your account!</p>
