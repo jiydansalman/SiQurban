@@ -31,7 +31,7 @@
         <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
             <img src="{{ asset('storage/images/logo_putih.png') }}" alt="Logo Siddiq Qurban" class="absolute top-5 -mt-5 left-5 w-40">
             
-            <h1 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-8xl">Assalammualaikum,</h1>
+            <h1 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-8xl">Assalaamu'alaikum,</h1>
             <h2 style="font-family: 'Berkshire Swash', sans-serif;" class="text-6xl">
                 <span id="countdown-number"></span> 
                 <span style="font-family: 'Abhaya Libre', sans-serif"> Hari menuju 
@@ -223,7 +223,7 @@
     <script>
         function updateCountdown() {
             // Tanggal Idul Adha 2025 (10 Dzulhijjah 1446H) -> 6 Juni 2024
-            let targetDate = new Date("2025-06-06");
+            let targetDate = new Date("2026-05-26");
 
             // Tanggal hari ini
             let today = new Date();

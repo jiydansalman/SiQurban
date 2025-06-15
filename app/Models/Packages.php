@@ -17,8 +17,8 @@ class Packages extends Model
         'image_path'
     ];
 
-    public function transactions()
+    public function savings()
     {
-        return $this->hasMany(transactions::class);
+        return $this->hasMany(Saving::class, 'package_id');
     }
 }

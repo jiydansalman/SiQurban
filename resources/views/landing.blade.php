@@ -28,7 +28,7 @@
     <div class="absolute inset-0 bg-black bg-opacity-25 flex flex-col justify-center items-center text-white text-center">
         <img src="{{ asset('storage/images/logo_putih.png') }}" alt="Logo Siddiq Qurban" class="absolute top-5 left-5 w-40">
         
-        <h1 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-8xl">Assalammualaikum,</h1>
+        <h1 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-8xl">Assalamualaikum,</h1>
         <h2 style="font-family: 'Berkshire Swash', sans-serif;" class="text-6xl">
             <span id="countdown-hari"></span> 
             <span style="font-family: 'Abhaya Libre', sans-serif"> Hari menuju 

@@ -52,9 +52,9 @@ class User extends Authenticatable
     }
 
     // Relasi (jika sudah buat model terkait)
-    public function transactions()
+    public function savings()
     {
-        return $this->hasMany(Transactions::class);
+        return $this->hasMany(Saving::class);
     }
 
     public function reminders()

@@ -26,8 +26,8 @@ class ProfileController extends Controller
             'email' => 'required|email',
             'phone' => 'nullable|string',
             'address' => 'nullable|string',
-            'profile_photo' => 'nullable|image|max:2048'
-        ]);
+            // 'profile_photo' => 'nullable|image|max:2048'
+            ]);
 
         $user->full_name = $request->full_name;
         $user->email = $request->email;
@@ -48,7 +48,8 @@ class ProfileController extends Controller
             // Simpan ke DB
                     $user->profile_photo = $filename;
         }
-    
+        
+        
         $user->save();
     
         return redirect()->back()->with('success', 'Profile updated successfully');
