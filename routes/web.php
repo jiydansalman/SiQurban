@@ -35,7 +35,9 @@ Route::middleware('auth')->group(function () {
     Route::post('/tabungan/{id}/payment', [PageController::class, 'makePayment'])->name('tabungan.payment');
     Route::post('/savings', [PackageController::class, 'storeSaving'])->name('savings.store');
     // Di web.php
-Route::post('/tabungan/{saving}/payment', [TabunganController::class, 'makePayment'])->name('tabungan.payment');
+    Route::post('/tabungan/{saving}/payment', [TabunganController::class, 'makePayment'])->name('tabungan.payment');
+
+
     // Admin
     Route::get('/dashboard/statistik', [PageController::class, 'dashboard'])->name('dashboard');
 });
@@ -55,13 +57,10 @@ Route::post('/logout', function () {
     return redirect('/login');
 })->name('logout');
 
+
 Route::get('/detailpackage', function () {
     return view('detailpackage');
 })->name('detailpackage');
-
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
-})->name('dashboard');
 
 Route::get('/dashboard/tambah-admin', function () {
     return view('dashboard.tambah-admin');

@@ -35,7 +35,7 @@ class AuthController extends Controller
             'role_id' => 1,
         ]);
 
-        //direct ke login dengan pesan gacorrr
+        
         return redirect()->route('showLogin')->with('success','Berhasil membuat akun, selamat menabung');
     }
 
@@ -61,13 +61,14 @@ class AuthController extends Controller
             Auth::login($user);
 
             if ($user->role_id == 1){
-                return redirect()->route('dashboard')->with('success', 'Login sebagai admin!');
+                return redirect('/dashboard/statistik')->with('success', 'Login sebagai admin!');
             } else {
                 return redirect()->route('home')->with('success', 'Login berhasil!');
             }
         } else {
             // Login gagal
-            return back()->withErrors(['login' => 'Username atau password salah']);
+            return back()->withErrors(['login' => 'Username atau password salah'])
+            ->withInput();
         }
     }
 

@@ -22,15 +22,10 @@
             <div class="absolute inset-0" style="background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4),#875937);"></div>
         </header>
         <!-- Navigation Bar -->
-        <nav class="fixed top-0 left-0 w-full bg-transparent text-white py-4 px-8 flex justify-center space-x-6 z-50">
-            <a href="/home" style="font-family: 'Actor', sans-serif;" class="relative inline-block after:block after:h-[2px] after:w-full after:bg-black after:scale-x-0 hover:after:scale-x-100 transition-all">Home</a>
-            <a href="" style="font-family: 'Actor', sans-serif;" class="hover:underline">Packages</a>
-            <a href="/tabunganku" style="font-family: 'Actor', sans-serif;" class="hover:underline">Tabunganku</a>
-            <a href="/profile/edit" style="font-family: 'Afacad', sans-serif;" class="font-bold hover:underline">Profile</a>
-        </nav>
+        @include('partials.navbar')
 
         <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-            <img src="{{ asset('images/logo_putih.png') }}" alt="Logo Siddiq Qurban" class="absolute top-5 -mt-5 left-5 w-40">
+            <img src="{{ asset('images/logo_putih.png') }}" alt="Logo Siddiq Qurban" class="absolute top-6 mt-5 left-5 w-40">
 
             <h1 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-8xl">Packages</h1>
             <h4 style="font-family: 'Abhaya Libre', sans-serif;" class="text-white text-xl">Home > Packages</h4>
