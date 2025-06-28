@@ -15,7 +15,7 @@ class Saving extends Model
     protected $fillable = [
         'user_id', 
         'package_id', 
-        'amount_saved',
+        'total_saved',
         'delivery_location', 
         'delivery_address',
         'saving_type',
@@ -29,14 +29,14 @@ class Saving extends Model
     protected $casts = [
         'target_date' => 'date',
         'amount_per_period' => 'decimal:2',
-        'amount_saved' => 'decimal:2',
+        'total_saved' => 'decimal:2',
     ];
     
     // Default attributes
     protected $attributes = [
         'status' => 'active',
         'completed_periods' => 0,
-        'amount_saved' => 0,
+        'total_saved' => 0,
     ];
 
     /**
@@ -58,13 +58,13 @@ class Saving extends Model
     public function getProgressPercentageAttribute()
     {
         if (!$this->package || $this->package->price <= 0) return 0;
-        return min(100, ($this->amount_saved / $this->package->price) * 100);
+        return min(100, ($this->total_saved / $this->package->price) * 100);
     }
 
     public function getRemainingAmountAttribute()
     {
         if (!$this->package) return 0;
-        return max(0, $this->package->price - $this->amount_saved);
+        return max(0, $this->package->price - $this->total_saved);
     }
 
     public function getRemainingPeriodsAttribute()
@@ -75,7 +75,7 @@ class Saving extends Model
     // Legacy method - keep for backward compatibility
     public function getTotalSavedAttribute()
     {
-        return $this->amount_saved;
+        return $this->total_saved;
     }
     
     /**
@@ -85,12 +85,12 @@ class Saving extends Model
     {
         return $this->status === 'completed' || 
                $this->completed_periods >= $this->total_periods ||
-               ($this->package && $this->amount_saved >= $this->package->price);
+               ($this->package && $this->total_saved >= $this->package->price);
     }
     
     public function getFormattedAmountSavedAttribute()
     {
-        return 'Rp ' . number_format($this->amount_saved, 0, ',', '.');
+        return 'Rp ' . number_format($this->total_saved, 0, ',', '.');
     }
     
     public function getFormattedRemainingAmountAttribute()
@@ -138,7 +138,7 @@ class Saving extends Model
     {
         return $this->status === 'active' && 
                $this->completed_periods < $this->total_periods &&
-               ($this->package && $this->amount_saved < $this->package->price);
+               ($this->package && $this->total_saved < $this->package->price);
     }
     
     public function makePayment($amount = null)
@@ -149,12 +149,12 @@ class Saving extends Model
         
         $paymentAmount = $amount ?? $this->next_payment_amount;
         
-        $this->increment('amount_saved', $paymentAmount);
+        $this->increment('total_saved', $paymentAmount);
         $this->increment('completed_periods');
         
         // Check if saving is now complete
         if ($this->completed_periods >= $this->total_periods || 
-            ($this->package && $this->amount_saved >= $this->package->price)) {
+            ($this->package && $this->total_saved >= $this->package->price)) {
             $this->update(['status' => 'completed']);
         }
         
