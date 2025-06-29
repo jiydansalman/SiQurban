@@ -42,6 +42,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard/statistik', [PageController::class, 'dashboard'])->name('dashboard');
 });
 
+Route::get('/savings', function () {
+    return redirect()->route('tabunganku');
+});
 
 
 Route::prefix('dashboard')->middleware(['auth'])->group(function () {
