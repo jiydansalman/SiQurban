@@ -88,24 +88,7 @@
   <main class="flex-1 p-8">
     @yield('content')
   </main>
-  <script>
-    function confirmLogout() {
-      Swal.fire({
-        title: 'Yakin ingin logout?',
-        text: "Kamu akan keluar dari akun SiQurban.",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#8B5D33',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Ya, logout',
-        cancelButtonText: 'Batal'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          document.getElementById('logout-form').submit();
-        }
-      });
-    }
-  </script>
+  
 
 </body>
 </html>
