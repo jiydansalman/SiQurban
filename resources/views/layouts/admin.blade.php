@@ -219,8 +219,7 @@
                 <div class="flex-shrink-0 p-6 border-t border-white/20">
                     <form method="POST" action="{{ route('logout') }}" id="logout-form">
                         @csrf
-                        <button type="button"
-                            onclick="confirmLogout()"
+                        <button type="submit"
                             class="w-full flex items-center space-x-3 p-3 bg-red-500/20 hover:bg-red-500/30 text-red-200 hover:text-white rounded-lg transition-all duration-200 group">
                             <div class="flex-shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
