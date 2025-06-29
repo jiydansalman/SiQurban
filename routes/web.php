@@ -45,7 +45,9 @@ Route::middleware('auth')->group(function () {
 Route::get('/savings', function () {
     return redirect()->route('tabunganku');
 });
-
+Route::get('/logout', function () {
+    return redirect('/login');
+});
 
 Route::prefix('dashboard')->middleware(['auth'])->group(function () {
     Route::get('/packages', [PackageController::class, 'adminIndex'])->name('admin.packages.index');
