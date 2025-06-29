@@ -69,8 +69,7 @@
       <!-- Logout -->
       <form method="POST" action="{{ route('logout') }}" id="logout-form" class="mt-10">
         @csrf
-        <button type="button"
-          onclick="confirmLogout()"
+        <button type="submit"
           class="w-full flex items-center space-x-2 p-2 rounded text-white hover:bg-white hover:text-[#8B5D33] transition">
           <!-- Icon logout -->
           <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
