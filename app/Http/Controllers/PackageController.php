@@ -126,7 +126,7 @@ class PackageController extends Controller
         $saving = Saving::create([
             'user_id' => auth()->id(),
             'package_id' => $validated['package_id'],
-            'amount_saved' => 0,
+            'total_saved' => 0,
             'delivery_location' => ucfirst($validated['delivery_location']),
             'delivery_address' => $validated['address'],
             'saving_type' => $savingType,
