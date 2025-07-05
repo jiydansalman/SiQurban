@@ -17,13 +17,31 @@
     <h1 class="text-3xl font-serif" style="font-family: 'Berkshire Swash'">Welcome to SiQurban</h1>
     <p class="text-lg">create an account!</p>
     
+
+    @if ($errors->any())
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4">
+        <strong>Ups!</strong> Ada kesalahan:
+        <ul class="list-disc ml-5">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+@if (session('error'))
+    <div class="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded relative mb-4">
+        {{ session('error') }}
+    </div>
+@endif
+
     <form action="{{route('signedUp')}}" class="w-full max-w-xs flex flex-col" method="POST">
       @csrf
       <label for="username" class="font-bold">Username</label>
-      <input type="text" id="username" name="username" placeholder="Username" class="p-2 mb-1 rounded-lg bg-orange-100 text-black border-none">
+      <input type="text" id="username" name="username" placeholder="Username" value="{{ old('nama_field') }}" class="p-2 mb-1 rounded-lg bg-orange-100 text-black border-none">
 
       <label for="email" class="font-bold">Email / No Handphone</label>
-      <input type="text" id="email" name="email"  placeholder="Email / No Handphone" class="p-2 mb-1 rounded-lg bg-orange-100 text-black border-none">
+      <input type="text" id="email" name="email"  placeholder="Email / No Handphone"  value="{{ old('email') }}" class="p-2 mb-1 rounded-lg bg-orange-100 text-black border-none">
         
       <div class="relative flex flex-col">
         <label for="password" class="font-bold">Password</label>
