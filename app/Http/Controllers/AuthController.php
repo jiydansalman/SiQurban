@@ -67,8 +67,10 @@ class AuthController extends Controller
             }
         } else {
             // Login gagal
-            return back()->withErrors(['login' => 'Username atau password salah'])
-            ->withInput();
+            return redirect()->route('showLogin')
+                ->withErrors(['login' => 'Username atau password salah'])
+                ->withInput();
+
         }
     }
 

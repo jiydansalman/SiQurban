@@ -13,9 +13,15 @@ Route::get('/', function () {
 
 Route::get('/signup', [AuthController::class,'showSignUp'])-> name('signUp');
 Route::post('/signedup', [AuthController::class,'signUp'])-> name('signedUp');
+Route::get('/signedup', function () {
+    return redirect()->route('signUp')->with('error', 'Silakan daftar melalui form.');
+});
 
 Route::get('/login', [AuthController::class,'showLogin'])-> name('showLogin');
 Route::post('/logedIn', [AuthController::class,'logIn'])-> name('logedIn');
+Route::get('/logedIn', function () {
+    return redirect()->route('showLogin')->with('error', 'Silakan login melalui form.');
+});
 
 Route::middleware('auth')->group(function () {
     // User
